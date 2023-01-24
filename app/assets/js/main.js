@@ -1,10 +1,9 @@
 "use strict";
 
-/**************************/
 /* РАЗДЕЛ ПОИСКА В СЕКЦИИ */
-/**************************/
+
 var section_button = document.querySelector("#section__button");
-var services = ["VK", "YouTube", "Habr", "Tinkoff", "Sber", "VTB24"];
+var services = ["A", "B", "C", "D", "E"];
 var section_list = document.querySelector(".section__list");
 function handlerProperty() {
   var input = document.getElementById("section__text").value;
@@ -22,9 +21,8 @@ if (section_button) {
 }
 handlerProperty();
 
-/***********************/
 /*ПЕРЕКЛЮЧЕНИЕ КАРТОЧЕК*/
-/***********************/
+
 var card__grid = true;
 var icon__list_button = document.getElementById('icon__list-button');
 var icon__grid_button = document.getElementById('icon__grid-button');
@@ -62,9 +60,8 @@ if (icon__grid_button) {
   });
 }
 
-/*******************/
 /*ДОБАВЛЕНИЕ СТАТЕЙ*/
-/*******************/
+
 var card_add__button = document.getElementById('card-add__button__add');
 var card_add__button__cancel = document.getElementById('card-add__button--cancel');
 var card_add__button__create = document.getElementById('card-add__button--create');
@@ -75,7 +72,6 @@ if (card_add__button) {
     if (card_add__form) {
       card_add__button.style.display = 'none';
       card_add__form.style.display = 'flex';
-      faq_.style.display = 'none';
     }
   });
 }
@@ -84,7 +80,6 @@ if (card_add__button__cancel) {
     if (card_add__form) {
       card_add__button.style.display = 'block';
       card_add__form.style.display = 'none';
-      faq_.style.display = 'block';
     }
     ;
   });
@@ -103,19 +98,22 @@ if (card_add__button__create) {
     if (card__grid) {
       contentString = "<article class=\"card__body\">\n      <img class=\"card__image\" src=\"".concat(input_url, "\" alt=\"\">\n      <div class=\"card__content\">\n          <div class=\"card__description\">\n              <h3 class=\"card__title\">").concat(input_title, "</h3>\n              <p class=\"card__text\">").concat(input_description, "</p>    \n          </div>\n          <footer>\n              <p class=\"card__date\">").concat(getDate, " \xB7 4 min read</p> \n          </footer>\n      </div>\n      </article>");
     } else {
-      contentString = "<article class=\"card__body card__body--list\">\n        <img class=\"card__image\" src=\"".concat(input_url, "\" alt=\"\">\n        <div class=\"card__content card__body-list\">\n            <div class=\"card__description\">\n                <h3 class=\"card__title\">").concat(input_title, "</h3>\n                <p class=\"card__text\">").concat(input_description, "</p>    \n            </div>\n            <footer>\n                <p class=\"card__date\">").concat(getDate, " \xB7 6 min read</p> \n            </footer>\n        </div>\n        </article>");
+      contentString = "<article class=\"card__body card__body-list\">\n        <img class=\"card__image\" src=\"".concat(input_url, "\" alt=\"\">\n        <div class=\"card__content card__content-list\">\n            <div class=\"card__description\">\n                <h3 class=\"card__title\">").concat(input_title, "</h3>\n                <p class=\"card__text\">").concat(input_description, "</p>    \n            </div>\n            <footer>\n                <p class=\"card__date\">").concat(getDate, " \xB7 6 min read</p> \n            </footer>\n        </div>\n        </article>");
     }
     cards.insertAdjacentHTML('beforeend', contentString);
+    e.target.reset();
+    card_add__button.style.display = 'block';
+    card_add__form.style.display = 'none';
   });
 }
-/**************/
+
 /*ВОПРОС-ОТВЕТ*/
-/**************/
+
 var faq = document.querySelectorAll(".faq__question");
 var i;
 faq.forEach(function (faq__question) {
   faq__question.addEventListener("click", function () {
-    this.classList.toggle("active");
+    this.classList.toggle("faq__question--active");
     var body = this.nextElementSibling;
     if (body.style.display === "block") {
       body.style.display = "none";

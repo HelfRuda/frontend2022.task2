@@ -1,9 +1,9 @@
 
-/**************************/
+
 /* РАЗДЕЛ ПОИСКА В СЕКЦИИ */
-/**************************/
+
 const section_button = document.querySelector("#section__button");
-const services = ["VK","YouTube","Habr","Tinkoff","Sber","VTB24"];
+const services = ["A","B","C","D","E"];
 const section_list = document.querySelector(".section__list");
 function handlerProperty() {
   let input = document.getElementById("section__text").value;
@@ -17,9 +17,9 @@ if (section_button) {
 }
 handlerProperty();
 
-/***********************/
+
 /*ПЕРЕКЛЮЧЕНИЕ КАРТОЧЕК*/
-/***********************/
+
 var card__grid  = true;
 const icon__list_button = document.getElementById('icon__list-button');
 const icon__grid_button = document.getElementById('icon__grid-button');
@@ -67,9 +67,9 @@ if(icon__grid_button){
   });
 }
 
-/*******************/
+
 /*ДОБАВЛЕНИЕ СТАТЕЙ*/
-/*******************/
+
 const card_add__button = document.getElementById('card-add__button__add'); 
 const card_add__button__cancel = document.getElementById('card-add__button--cancel');
 const card_add__button__create = document.getElementById('card-add__button--create');
@@ -136,9 +136,9 @@ if(card_add__button__create){
     card_add__form.style.display = 'none';
     })
 }
-/**************/
+
 /*ВОПРОС-ОТВЕТ*/
-/**************/
+
 const faq = document.querySelectorAll(".faq__question");
 var i;
 faq.forEach((faq__question) => {
