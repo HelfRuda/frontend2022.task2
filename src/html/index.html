@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Руднев Даниил КИ20-20Б</title>
+    <link rel="stylesheet" href="assets/css/main.css"> 
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">   
+                <div class="header__menu">
+                    <img src="assets/images/logo.png" class="header__image" alt="Логотип ИКИТ">
+
+                    <ul class="header__list menu">
+                        <li class="header__item header__item--active"><a href="#">Главная</a></li>
+                        <li class="header__item"><a href="#">Информация</a></li>
+                        <li class="header__item"><a href="#">Новости</a></li>
+                        <li class="header__item"><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="header__user">
+                    <a class="header__username" href="#">Даниил</a>
+                    <img class="header__userlogo" src="assets/images/sign-in.png"  alt="Логотип профиля">
+                </div>
+            </nav>
+        </div>  
+    </header> 
+    <div class="page container">
+        <h1 class="page__title">Личная страница</h1>
+        <h2 class="page__subtitle">Полезная информация</h2>
+    </div>    
+    <section class="section container">
+        <article class="section__left">
+            <div class="section__search">
+                <div class="section__wrapper">
+                    <input id="section__text" type="text" />
+                </div>
+                <div class="section__button">
+                    <button id="section__button" >Поиск</button>
+                </div>
+                
+            </div>
+            <h2 class="section__title">Сервисы</h2>
+            <ul class="section__list">
+                <li class="section__item">A</li>
+                <li class="section__item">B</li>
+                <li class="section__item">C</li>
+                <li class="section__item">D</li>
+                <li class="section__item">E</li>
+            </ul>
+        </article>
+        <article class="section__right">
+            <h2 class="section__title">Название название</h2>
+            <div class="section__decription">
+                <h3 class="section__subtitle">Что такое А </h3>
+                <p class="section__text">А - это первая буква алфавита. Она его начинает, и если называть буквы в обратном порядке, то и заканчивает.</p>
+            </div>
+            <div class="section__decription">
+                <h3 class="section__subtitle">Как понять слово "Здравствуйте"</h3>
+                <p class="section__text">Здравствуйте - это такое слово, которое по этимологии своей интерпретировалось как пожелание другому человеку здоровья (откуда и корень "здравствуй" образованный от слова "здоровье"), однако в настоящее время это слово общепринято воспринимается как приветствие.</p>
+            </div>
+        </article>
+    </section>
+    <div class="container special">
+        <h2 class="special__title">Статьи</h2>
+        <div class="special__icons">
+            <button class="special__icon-button" id="icon__list-button">
+                <svg  viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M8.5 6H21.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.5 12H21.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M8.5 18H21.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3.5 6H3.51" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3.5 12H3.51" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M3.5 18H3.51" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </button>
+            <button class="special__icon-button special__icon-button--active" id="icon__grid-button">
+                <svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5 3H3.5V10H10.5V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21.5 3H14.5V10H21.5V3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21.5 14H14.5V21H21.5V14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M10.5 14H3.5V21H10.5V14Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+            </button>
+        </div>
+        <p class="special__subtitle">Новости</p>
+    </div>
+    <div class="card container">
+        <article class="card__body">
+            <img class="card__image" src="/assets/images/first.jpg" alt="Первая картинка">
+            <div class="card__content">
+                <div class="card__description">
+                    <h3 class="card__title">Нравится это изображение?</h3>
+                    <p class="card__text">Если вам понравилась эта картинка и вы думаете, что её нарисовал человек, то вы удивитесь. Данное изображение было сгенерировано нейросетью. Круто, не правда ли?</p>
+                </div>
+                <footer>
+                    <p class="card__date">2 January, 2022 · 6 min read</p>
+                </footer>
+            </div>
+        </article>
+        <article class="card__body">
+            <img class="card__image" src="/assets/images/second.jpg" alt="Вторая картинка">
+            <div class="card__content">
+                <div class="card__description">
+                    <h3 class="card__title">А эта зацепила?</h3>
+                    <p class="card__text">Верно, эта картина тоже была создана с помощью нейросети, но уже другой. Их теперь много знаете. Даже жутко немного, в такое время живём, программы так быстро умнеют, но думаю, что всё только впереди)</p>
+                </div>
+                <footer>
+                    <p class="card__date">13 April, 2022 · 8 min read</p>
+                </footer>
+            </div>
+        </article>
+    </div>
+    <div class="card-add container">
+        <div class="card-add__wrapper">
+            <button class="card-add__button--add" id="card-add__button__add">Добавить</button>
+        </div>
+        <form class="card-add__form" onsubmit="return false;">
+            <div class="card-add__form-wrapper">
+                <label class="card-label__name">Название</label>
+                <input type="text" id="card-text-name">
+                <label class="card-label__url">Ссылка на картинку</label>
+                <input type="text" id="card-text-url">
+                <label class="card-label__description">Описание</label>
+                <textarea id="card-text-description"></textarea>
+                <div class="card-add__button-wrapper">
+                    <button type="reset" class="card-add__button--cancel" id="card-add__button--cancel">Отмена</button>
+                    <button type="submit" class="card-add__button--create" id="card-add__button--create">Создать</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="faq container" id="faq">
+        <h3 class="faq__title">FAQ</h2>
+        <dl class="faq__wrapper">
+            <dt class="faq__question">Вам нравятся тортики?</dt>
+            <dd class="faq__answer">Торт - это ложь</dd>
+            <dt class="faq__question">Это была отсылка на Portal?</dt>
+            <dd class="faq__answer">Да, была</dd>
+        </dl>
+    </div>
+    <footer class="footer"> 
+        <div class="container">
+            <p class="footer__text">© 2022 Институт космических и информационных технологий СФУ</p>
+        </div>
+    </footer>
+</body>
+<script src="/assets/js/main.js"></script> 
+</html>
